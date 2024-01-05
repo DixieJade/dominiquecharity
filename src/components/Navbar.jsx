@@ -5,10 +5,13 @@ const Navbar = () => {
   return (
     <nav className="px-24">
       <div className="flex justify-between">
-        <div className="w-16">
+        <div className="w-12">
           <img src={logo} alt="Logo of the group" />
         </div>
-        <a href="https://direct.me/dominiqueruiz" className="cursor-pointer">
+        <a
+          href="https://direct.me/dominiqueruiz"
+          className="cursor-pointer no-underline"
+        >
           About Us
         </a>
       </div>

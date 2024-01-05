@@ -11,7 +11,13 @@ const Index = () => {
         Select your donation
       </h2>
       <div className="flex items-center mb-4">
-        <label className="mr-4">
+        <label
+          className={`mr-3 ${
+            donationFrequency === "once"
+              ? "bg-[#000080] text-white p-2 rounded-md"
+              : ""
+          }`}
+        >
           <input
             type="radio"
             name="donationFrequency"
@@ -22,7 +28,13 @@ const Index = () => {
           />
           Give once
         </label>
-        <label>
+        <label
+          className={`mr-4 ${
+            donationFrequency === "monthly"
+              ? "bg-[#000080] text-white p-2 rounded-md"
+              : ""
+          }`}
+        >
           <input
             type="radio"
             name="donationFrequency"
@@ -45,7 +57,7 @@ const Index = () => {
         />
       </div>
       <div className="text-center mt-4">
-        <a href="#" className="text-gray-700 hover:underline">
+        <a href="#" className="text-gray-700 no-underline">
           PAYMENT INFORMATION
         </a>
       </div>

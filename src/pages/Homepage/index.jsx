@@ -4,7 +4,7 @@ import Payment from "../../components/Payment";
 
 const index = () => {
   return (
-    <div>
+    <div className="py-4">
       <section>
         <Navbar />
       </section>
@@ -22,7 +22,7 @@ const index = () => {
                 this charity.
               </p>
             </div>
-            <div className="gird grid-cols-2">
+            <div className="grid grid-cols-2">
               {/*Goals of the website starts*/}
               <div>
                 <h2>Social Impact</h2>
