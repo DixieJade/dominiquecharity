@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "../../components/Navbar";
+import Payment from "../../components/Payment";
 
 const index = () => {
   return (
@@ -7,8 +8,10 @@ const index = () => {
       <section>
         <Navbar />
       </section>
-
-      <section className="bg-[#000080] py-4">
+      <div>
+        <Payment />
+      </div>
+      <section className="bg-[#000080] text-white py-4">
         <div className="px-24">
           <div className="flex flex-col gap-2">
             <div>
