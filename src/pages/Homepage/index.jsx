@@ -5,12 +5,12 @@ import Payment from "../../components/Payment";
 const index = () => {
   return (
     <div className="py-4">
-      <section>
+      <section className="bg-heroBg bg-cover bg-no-repeat">
         <Navbar />
+        <div>
+          <Payment />
+        </div>
       </section>
-      <div>
-        <Payment />
-      </div>
       <section className="bg-[#000080] text-white py-4">
         <div className="px-24">
           <div className="flex flex-col gap-2">
