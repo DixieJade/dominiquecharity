@@ -10,7 +10,7 @@ const Navbar = () => {
         </div>
         <a
           href="https://direct.me/dominiqueruiz"
-          className="cursor-pointer no-underline"
+          className="cursor-pointer no-underline text-[#000080] font-bold"
         >
           About Us
         </a>
