@@ -14,8 +14,8 @@ const Index = () => {
   };
 
   return (
-    <div className="mx-auto">
-      <div className="shadow-lg bg-white w-[26rem] px-3 py-4 flex flex-col items-center">
+    <div className="">
+      <div className="shadow-lg bg-white w-[26rem] px-3 py-8 flex flex-col items-center">
         <div className="flex items-center mb-4">
           <label
             className={` ${
@@ -54,7 +54,7 @@ const Index = () => {
         </div>
         {donationFrequency === "once" && (
           <div className="mb-4 grid grid-cols-2 gap-x-3 gap-y-3 px-2">
-            {[60, 110, 150, 200, 500].map((amount) => (
+            {[60, 110, 150, 200, 500].map((amount, index) => (
               <p
                 key={amount}
                 onClick={() => handleAmountClick(amount)}
@@ -78,7 +78,7 @@ const Index = () => {
           </div>
         )}
         {donationFrequency === "monthly" && (
-          <div className="mb-4 grid grid-cols-2 gap-x-3 gap-y-2 px-2">
+          <div className="mb-4 grid grid-cols-2 gap-x-3 gap-y-3 px-2">
             {[20, 40, 60, 80, 100].map((amount) => (
               <p
                 key={amount}

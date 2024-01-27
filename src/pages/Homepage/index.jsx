@@ -7,7 +7,7 @@ const index = () => {
     <div className="py-4">
       <section className="bg-heroBg bg-cover bg-no-repeat">
         <Navbar />
-        <div>
+        <div className="mt-20 flex justify-end pr-8 overflow-y-visible">
           <Payment />
         </div>
       </section>
